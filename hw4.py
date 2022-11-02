@@ -4,7 +4,12 @@
 # parameter, x, and returns
 # the value of x multiplied
 # by three.
-#
+
+def triple(x):
+    x = x*3
+    return x
+result
+
 
 
 # 2)
