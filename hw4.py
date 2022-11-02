@@ -9,7 +9,7 @@ def triple(x):
     x = x*3
     return x
 result
-
+ffff
 
 
 # 2)
