@@ -6,10 +6,11 @@
 # by three.
 
 def triple(x):
-    x = x*3
-    return x
-result
-ffff
+  return x * 3
+
+print(triple(3))
+print(triple(5))
+print(triple(9))
 
 
 
@@ -18,7 +19,11 @@ ffff
 # takes two parameters and returns the result of
 # the second value subtracted from the first.
 #
-
+def subtract(a, b):
+    return a - b
+print(subtract(2,1))
+print(subtract(9,2))
+print(subtract(10,5))
 
 # 3)
 # Create a function called "dictionary_maker"
@@ -30,7 +35,14 @@ ffff
 #
 # For example, if given: [('foo', 1), ('bar', 3)]
 # it should return {'foo': 1, 'bar': 3}
-
+def dictionary_maker():
+    d = dict();
+    d['apple'] = 1
+    d['strawberry'] = 2
+    d['guava'] = 3
+    d['lemon'] = 4
+    return d
+print('the returned fruit is:', dictionary_maker())
 
 
 ############################################
