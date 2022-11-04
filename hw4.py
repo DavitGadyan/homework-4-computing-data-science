@@ -19,8 +19,8 @@ print(triple(9))
 # takes two parameters and returns the result of
 # the second value subtracted from the first.
 #
-def subtract(a, b):
-    return a - b
+def subtract(c, d):
+    return c - d
 print(subtract(2,1))
 print(subtract(9,2))
 print(subtract(10,5))
