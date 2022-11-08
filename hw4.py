@@ -37,13 +37,12 @@ print(subtract(10,5))
 # it should return {'foo': 1, 'bar': 3}
 def dictionary_maker():
     d = dict();
-    d['apple'] = 1
+    d['banana'] = 1
     d['strawberry'] = 2
     d['guava'] = 3
     d['lemon'] = 4
     return d
 print('the returned fruit is:', dictionary_maker())
-
 
 ############################################
 #
