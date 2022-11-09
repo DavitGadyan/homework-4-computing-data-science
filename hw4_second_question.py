@@ -11,8 +11,7 @@ cv1 = [{'user': 'john', 'jobs': ['analyst', 'engineer']},
       {'user': 'jane', 'jobs': ['finance', 'software']}]
 
 cv2 = [{'user': 'jess', 'jobs': ['analyst', 'finance']},
-      {'user': 'jeremy', 'jobs': ['data science', 'software']}]
-list_of_cv = [cv1, cv2]
+      {'user': 'jeremy', 'jobs': ['data science', 'analyst']}]
 #
 # 4)
 # Create a function called "has_experience_as"
@@ -38,7 +37,8 @@ def has_experience_as(list_of_cv, job_title):
 # that job.
 def job_counts(list_of_cv):
     jobcount = dict()
-    for cv in cvs:
+    for cv in list_of_cv:
+        print(cv)
         for job in cv['jobs']:
             if jobcount.get(job)!=None:
                 jobcount[job] += 1
@@ -59,5 +59,5 @@ def job_counts(list_of_cv):
 def most_popular_job(list_of_cv):
     popular = ()
     rank = job_counts(list_of_cv)
-    popular = sorted(rank, reverse = True)
+    popular = sorted(rank.items(), key=lambda kv: kv[1], reverse = True)
     return popular

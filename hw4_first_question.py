@@ -35,11 +35,12 @@ print(subtract(10,5))
 #
 # For example, if given: [('foo', 1), ('bar', 3)]
 # it should return {'foo': 1, 'bar': 3}
-def dictionary_maker():
-    d = dict();
-    d['banana'] = 1
-    d['strawberry'] = 2
-    d['guava'] = 3
-    d['lemon'] = 4
+def dictionary_maker(list_2_tuples):
+    d = {}
+
+    for i in list_2_tuples:
+      d[i[0]] = i[1]
+      
+    print(d)
     return d
-print('the returned fruit is:', dictionary_maker())
+print('the returned fruit is:', dictionary_maker([('foo', 1), ('bar', 3)]))

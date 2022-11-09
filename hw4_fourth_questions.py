@@ -10,7 +10,6 @@
 #
 # import packages including custom functions for DRY
 import pandas as pd
-from hw4_third_questions import *
 
 # import data
 df = pd.read_csv('covid.csv')
